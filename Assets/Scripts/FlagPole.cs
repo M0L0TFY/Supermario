@@ -25,7 +25,7 @@ public class FlagPole : MonoBehaviour
 
         yield return MoveTo(player.transform, poleBottom.position);
         yield return MoveTo(player.transform, player.transform.position + Vector3.right);
-        yield return MoveTo(player.transform, player.transform.position + Vector3.right + Vector3.down);
+        yield return MoveTo(player.transform, player.transform.position + Vector3.right + Vector3.up);
         yield return MoveTo(player.transform, castle.position);
 
         player.gameObject.SetActive(false);
